@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <link rel="stylesheet" href="./css/style-tour.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+</head>
+
+<script type="text/javascript">
+    $(window).scroll(function(){
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+    });
+
+</script>
+
+<body class="body-bg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand ml-5 font-weight-regular" style="font-size: 30px;">YourTrip</a>
+                
+                <!-- Collapse Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <!-- Collapsible Content -->
+
+                <div class="collapse navbar-collapse pr-5" id="navbarNavDropdown">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav ml-auto"> 
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" 
+                            aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-label="navbarDropdownMenuLink">
+                                <a href="#" class="dropdown-item">Create own tour</a>
+                                <a href="#" class="dropdown-item">Choose ready tour</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacts</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Sign in</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="container centered">
+            <h1 style="letter-spacing: 6px; font-size: 50px;">Big Almaty Lake</h1>
+            <img src="./img/V-1.png" alt="vector">
+        </div>
+    </section>
+
+    <div class="container" id="info">
+        <h2>Information about <b id="blueEl">tour</b></h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <img src="./img/location.jpg" alt="icon1" id="image-icons">
+                <div id="about">
+                <h3>Location</h3>
+                <p style="padding-top: 10px;">15 km from Almaty</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6">
+                <img src="./img/how-to-get.jpg" alt="icon2" id="image-icons">
+                <div id="about">
+                <h3>How to get there ?</h3>
+                <p style="padding-top: 10px;">By train to Almaty and by car to the place</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <img src="./img/tour-type.jpg" alt="icon1" id="image-icons">
+                <div id="about">
+                <h3>Type of tour</h3>
+                <p style="padding-top: 10px;">Walking</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6">
+                <img src="./img/cost.jpg" alt="icon2" id="image-icons">
+                <div id="about">
+                <h3>Cost</h3>
+                <p style="padding-top: 10px;">XX XXXX KZT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/BAL1.jpg" alt="BAL1" width="800" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/BAL2.jpg" alt="BAL2" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/BAL0.jpg" alt="BAL0" width="1100" height="500">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+
+    <div class="container" id="info2">
+        <h2>Cost of <b id="blueEl">tour</b> includes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./img/meal.jpg" alt="icon5" id="image-icons">
+                <div id="about">
+                <h3>Meal</h3>
+                <p style="padding-top: 10px;">The trip includes meals</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img src="./img/train.jpg" alt="icon6" id="image-icons">
+                <div id="about">
+                <h3>Train tickects</h3>
+                <p style="padding-top: 10px;">You will receive e-tickets</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img src="./img/insurance.jpg" alt="icon7" id="image-icons">
+                <div id="about">
+                <h3>Insurance</h3>
+                <p style="padding-top: 10px;">The price will include insurance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="additional-expenses">
+        <div class="container" id="info3">
+            <h2 style="color: white; margin-bottom: 20px">Additional expenses</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="about">
+                    <h3 style="color: white">Equipment</h3>
+                    <p style="padding-top: 10px; color: white">Rental of equipment not included in the program</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div id="about">
+                    <h3 style="color: white">Tents</h3>
+                    <p style="padding-top: 10px; color: white;">We do not provide rental of camping tents and gazebos</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div id="about">
+                    <h3 style="color: white">Souvenir products</h3>
+                    <p style="padding-top: 10px; color: white;">We offer a wide range of souvenir products, original keepsake gifts from 500 KZT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container centered">
+        <button type="button" class="btn" id="buttons">Take a trip</button> <br>
+    </div>
+
+    
+
+
+    <footer id="footer">
+        <img src="./img/footer.jpg" alt="footer" style="width:100% ;height: auto;">
+    </footer>
+</body>
+</html>

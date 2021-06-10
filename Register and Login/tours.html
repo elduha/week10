@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+</head>
+<body class="body-bg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand ml-5 font-weight-regular" style="font-size: 30px;">YourTrip</a>
+                
+                <!-- Collapse Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                
+                <!-- Collapsible Content -->
+
+                <div class="collapse navbar-collapse pr-5" id="navbarNavDropdown">
+
+                <!-- Links -->
+                    <ul class="navbar-nav ml-auto"> 
+
+                        <li class="nav-item">
+                            <a href="index2.php" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" 
+                            aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-label="navbarDropdownMenuLink">
+                                <a href="index.php" class="dropdown-item">Create own tour</a>
+                                <a href="tours.html" class="dropdown-item">Choose ready tour</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacts</a>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid" id="backgroud"> 
+
+        <div class="container" id="catalog">
+
+            <h2>Save time and find<b id="blueEl"> ready-made</b> tours!</h2>
+
+            <div class="container input-group md-form form-sm form-1 pl-0" id="search">
+                <input class="form-control my-0 py-1" type="text" id="search" name="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-prepend">
+                    <span class="input-group-text cyan lighten-2" id="basic-text1"><i class="fas fa-search text-white"
+                        aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="col-md-6" id="tour">
+                        <img src="./img/bal-tours.jpg" alt="bal" id="image">
+                        <h3 style="margin-top: 20px;">Big Almaty Lake</h3>
+                      <p style="margin-top: 15px;">The <b id="blueEl">Big Almaty Lake</b> is a unique body of water that has 
+                          found its place in the spurs of the Trans-Ili Alatau.</p>
+                          <button type="button" class="btn" id="buttons">Read more</button> <br>
+                          <i style="margin-top: 15px;" class="far fa-map">Almaty</i>
+                    </div>
+                    <div class="col-md-6" id="tour">
+                        <img src="./img/charyn-tours.jpg" alt="charyn" id="image">
+                        <h3 style="margin-top: 20px;">Charyn сanyon</h3>
+                        <p style="margin-top: 15px;">A natural wonder in the <b id="blueEl">Tien Shan Mountains</b>, 
+                            which took millennia to form. The canyon is roughly 90 kilometres </p>
+                          <button type="button" class="btn" id="buttons">Read more</button> <br>
+                          <i style="margin-top: 15px;" class="far fa-map">Almaty</i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" id="tour">
+                        <img src="./img/alakol-tours.jpg" alt="alakol" id="image">
+                        <h3 style="margin-top: 20px;">Alakol Lake</h3>
+                      <p style="margin-top: 15px;">Alakol is a large lake in the <b id="blueEl">Republic of Kazakhstan</b>, 
+                        although it is difficult to call it a lake, it is so large.</p>
+                          <button type="button" class="btn" id="buttons">Read more</button> <br>
+                          <i style="margin-top: 15px;" class="far fa-map">East Kazakhstan</i>
+                    </div>
+                    <div class="col-md-6" id="tour">
+                        <img src="./img/plato-tours.jpg" alt="plato" id="image">
+                        <h3 style="margin-top: 20px;">Ustyurt Plateau</h3>
+                      <p style="margin-top: 15px;">The <b id="blueEl">Ustyurt</b> a transboundary clay desert 
+                        shared by Turkmenistan, Uzbekistan and Kazakhstan.</p>
+                          <button type="button" class="btn" id="buttons">Read more</button> <br>
+                          <i style="margin-top: 15px;" class="far fa-map">Mangystau</i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+    <footer id="footer">
+        <img src="./img/footer.jpg" alt="footer" style="width:100% ;height: auto;">
+    </footer>
+
+</body>
+</html>
